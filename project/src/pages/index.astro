@@ -1,5 +1,6 @@
 ---
-import Card from '../components/Card.astro';
+import TechCard from '../components/Tech-card.astro';
+import ExperienceCard from '../components/Experience_card.astro';
 import '../style/index.css';
 ---
 
@@ -13,32 +14,46 @@ import '../style/index.css';
 	<main>
 		<h1 class="mt-10 text-6xl flex justify-center"> Hey I'm Pablo Pais Ficret </h1>
 		<h2 class="mt-5 text-5xl flex justify-center"> Computer Engineer </h2>
-		<div class="description text-3xl">
-			<p>
-				Computer Engineer specialized in web development, backend development and video game development. 
-				I'm always eager to learn and apply my knowledge to ensure things work as intended.   
-			</p>
-		</div>
+		<p class="description text-3xl">
+			Computer Engineer specialized in web development, backend development and video game development. 
+			I'm always eager to learn and apply my knowledge to ensure things work as intended.   
+		</p>
 	</main>
 
 	<body>
-		<h1 class="mt-24 text-6xl flex justify-center"> Technologies </h1>
+		<h1 class="mt-96 text-6xl flex justify-center"> Technologies </h1>
 			
 		<div class="flex justify-center">
-			<Card icon="TypeScript.svg" />
-			<Card icon="HTML5.png" />		
-			<Card icon="CSS3.png" />
-			<Card icon="JavaScript.svg" />
-			<Card icon="React.svg" />
-			<Card icon="Python.png" />
+			<TechCard icon="HTML5.png" />
+			<TechCard icon="CSS3.png" />	
+			<TechCard icon="JavaScript.svg" />	
+		</div>
+		<div class="flex justify-center">		
+			<TechCard icon="TypeScript.svg" />
+			<TechCard icon="React.svg" />
+			<TechCard icon="Python.png" />
 		</div>
 		<div class="flex justify-center">
-			<Card icon="C++.png"/>
-			<Card icon="C_Sharp.svg" />
-			<Card icon="Ruby.svg" />
-			<Card icon="PostgresSQL.svg" />
-			<Card icon="MongoDB.svg" />
-			<Card icon="Unity.png" />
+			<TechCard icon="C++.png"/>
+			<TechCard icon="C_Sharp.svg" />
+			<TechCard icon="Ruby.svg" />
+		</div>
+		<div class="flex justify-center">	
+			<TechCard icon="PostgresSQL.svg" />
+			<TechCard icon="MongoDB.svg" />
+			<TechCard icon="Unity.png" />
+		</div>
+
+		<h1 class="mt-32 text-6xl flex justify-center"> Experiencia </h1>
+		<ExperienceCard 
+			positionName="Backend Development" 
+			companyName="Acid Tango" 
+			companyCountry="Spain" 
+			dateSpan="Febrero 2024 - Mayo 2024"
+			description="During my internship, I developed and optimized an API that integrated the services of two companies, facilitating their communication. Applying agile methodologies, I worked in a team to improve the performance and scalability of the API, which allowed me to apply technical knowledge in a real environment and strengthen my software development skills." 
+		/>
+		<div>
+			<img>
 		</div>
 	</body>
 </html>
