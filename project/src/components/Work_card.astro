@@ -1,0 +1,19 @@
+---
+import '../style/work_card.css';
+
+interface Props {
+    image: string;
+    webpageName: string;
+    description: string;
+}
+
+const { image, webpageName, description } = Astro.props;
+---
+
+<div class="border-4 border-gray-800 bg-slate-500 p-6 rounded-lg shadow-lg mx-96">
+    <div class="flex justify-center">
+        <img src={image}>
+    </div>
+    <p class="flex justify-center text-4xl pt-5"> {webpageName} </p>
+    <p class="flex justify-center text-3xl px-14 py-2"> {description} </p>
+</div>

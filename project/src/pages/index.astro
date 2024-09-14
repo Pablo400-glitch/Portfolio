@@ -1,6 +1,7 @@
 ---
 import TechCard from '../components/Tech-card.astro';
 import ExperienceCard from '../components/Experience_card.astro';
+import WorkCard from '../components/Work_card.astro';
 import '../style/index.css';
 ---
 
@@ -14,14 +15,17 @@ import '../style/index.css';
 	<main>
 		<h1 class="mt-10 text-6xl flex justify-center"> Hey I'm Pablo Pais Ficret </h1>
 		<h2 class="mt-5 text-5xl flex justify-center"> Computer Engineer </h2>
-		<p class="description text-3xl">
-			Computer Engineer specialized in web development, backend development and video game development. 
-			I'm always eager to learn and apply my knowledge to ensure things work as intended.   
-		</p>
+		<div class="mx-40">
+			<p class="my-10 mx-96 text-3xl">
+				Computer Engineer specialized in web development, backend development and video game development. 
+				I'm always eager to learn and apply my knowledge to ensure things work as intended.   
+			</p>
+		</div>
+
 	</main>
 
 	<body>
-		<h1 class="text-6xl flex justify-center"> Technologies </h1>
+		<h1 class="text-6xl flex justify-center mb-5"> Technologies </h1>
 			
 		<div class="flex justify-center">
 			<TechCard icon="HTML5.png" />
@@ -45,21 +49,38 @@ import '../style/index.css';
 		</div>
 
 		<h1 class="mt-32 text-6xl flex justify-center"> Experience </h1>
-		<ExperienceCard 
-			positionName="Backend Development" 
-			companyName="Acid Tango" 
-			companyCountry="Spain" 
-			dateSpan="Febrero 2024 - Mayo 2024"
-			description="During my internship, I developed and optimized an API that integrated the services of two companies, facilitating their communication. Applying agile methodologies, I worked in a team to improve the performance and scalability of the API, which allowed me to apply technical knowledge in a real environment and strengthen my software development skills." 
-		/>
-
-		<h1 class="mt-32 text-6xl flex justify-center"> What can I do? </h1>
+		<div class="mx-96 mb-20">
+			<ExperienceCard 
+				positionName="Backend Development" 
+				companyName="Acid Tango" 
+				companyCountry="Spain" 
+				dateSpan="Febrero 2024 - Mayo 2024"
+				description="During my internship, I developed and optimized an API that integrated the services of two companies, facilitating their communication. Applying agile methodologies, I worked in a team to improve the performance and scalability of the API, which allowed me to apply technical knowledge in a real environment and strengthen my software development skills." 
+			/>
+		</div>
+		
 		<div class="mx-56">
 			<img src="Top_Wave.svg">
 		</div>
-		<div class="bg-red-600 mx-56">
-			
+		
+		<div class="mx-56" style="background-color: #dd1e1e">
+			<h1 class="pt-10 text-6xl flex justify-center"> What can I do? </h1>
+			<div class="mx-auto py-10">
+				<WorkCard 
+					image="Cesinf.png" 
+					webpageName="Cesinfull" 
+					description="I worked for this page" 
+				/>
+			</div>
+			<div class="mx-auto pb-10">
+				<WorkCard 
+					image="AOS.png" 
+					webpageName="AOS" 
+					description="I worked for this page" 
+				/>
+			</div>
 		</div>
+		
 		<div class="mx-56">
 			<img src="Down_Wave.svg">
 		</div>

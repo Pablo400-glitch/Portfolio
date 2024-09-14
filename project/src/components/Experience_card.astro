@@ -12,10 +12,9 @@ interface Props {
 const { positionName, companyName, companyCountry, dateSpan, description } = Astro.props;
 ---
 
-
-<div class="experience-card my-10">
-    <p class="flex justify-center text-2xl mt-5"> {positionName} </p>
-    <p class="flex justify-center text-2xl"> {companyName} ({companyCountry}) </p>
-    <p class="flex justify-center text-2xl"> {dateSpan} </p>
-    <p class="flex justify-center text-2xl mx-14 my-2"> {description} </p>
+<div class="experience-card py-5 mx-44 mt-10">
+    <p class="flex justify-center text-4xl"> {positionName} </p>
+    <p class="flex justify-center text-4xl"> {companyName} ({companyCountry}) </p>
+    <p class="flex justify-center text-4xl"> {dateSpan} </p>
+    <p class="flex justify-center text-3xl px-14 py-2"> {description} </p>
 </div>
