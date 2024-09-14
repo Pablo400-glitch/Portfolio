@@ -1,6 +1,5 @@
 ---
 import '../style/experience_card.css';
-import '../style/index.css';
 
 interface Props {
     positionName: string;
@@ -13,10 +12,10 @@ interface Props {
 const { positionName, companyName, companyCountry, dateSpan, description } = Astro.props;
 ---
 
-<div class="experience-card">
+
+<div class="experience-card my-10">
     <p class="flex justify-center text-2xl mt-5"> {positionName} </p>
     <p class="flex justify-center text-2xl"> {companyName} ({companyCountry}) </p>
     <p class="flex justify-center text-2xl"> {dateSpan} </p>
     <p class="flex justify-center text-2xl mx-14 my-2"> {description} </p>
 </div>
-
