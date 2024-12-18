@@ -1,0 +1,75 @@
+{
+    "full_name": "Hola soy Pablo Pais Ficret",
+    "career_name": "Ingeniería Informática",
+    "introduction": "Ingeniero Informático especializado en desarrollo web, desarrollo backend y desarrollo de videojuegos. Siempre estoy ansioso por aprender y aplicar mis conocimientos para asegurarme de que las cosas funcionen como se espera.",
+    "technologies": {
+        "title": "Tecnologías",
+        "technologies_array": [
+            {
+                "icon": "HTML5.png"
+            },
+            {
+                "icon": "CSS3.png"
+            },
+            {
+                "icon": "JavaScript.svg"
+            },
+            {
+                "icon": "TypeScript.svg"
+            },
+            {
+                "icon": "React.svg"
+            },
+            {
+                "icon": "Python.png"
+            },
+            {
+                "icon": "C++.png"
+            },
+            {
+                "icon": "C_Sharp.svg"
+            },
+            {
+                "icon": "Ruby.svg"
+            },
+            {
+                "icon": "PostgresSQL.svg"
+            },
+            {
+                "icon": "MongoDB.svg"
+            },
+            {
+                "icon": "Unity.png"
+            }
+        ]
+    },
+    
+    "work_experience": {
+        "title": "Experiencia",
+        "experience": [
+            {
+                "position_name": "Desarrollador Backend", 
+                "company_name": "Acid Tango", 
+                "company_country": "España", 
+                "date_span": "Febrero 2024 - Mayo 2024",
+                "description": "Durante mi pasantía, desarrollé y optimicé una API que integraba los servicios de dos empresas, facilitando su comunicación. Aplicando metodologías ágiles, trabajé en equipo para mejorar el rendimiento y la escalabilidad de la API, lo que me permitió aplicar mis conocimientos técnicos en un entorno real y fortalecer mis habilidades en el desarrollo de software."
+            }
+        ]
+    },
+    
+    "my_work": {
+        "title": "¿Qué puedo hacer?",
+        "work_array": [
+            {
+                "image": "Cesinf.png",
+                "webpage_name": "Cesinfull",
+                "description": "Trabajé para esta página"
+            },
+            {
+                "image": "AOS.png",
+                "webpage_name": "AOS",
+                "description": "Trabajé para esta página"
+            }
+        ]
+    }
+}

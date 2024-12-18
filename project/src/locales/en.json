@@ -1,0 +1,77 @@
+{
+    "full_name": "Hey I'm Pablo Pais Ficret",
+    "career_name": "Computer Engineering",
+    "introduction": "Computer Engineer specialized in web development, backend development and video game development. I'm always eager to learn and apply my knowledge to ensure things work as intended.",
+    "technologies": {
+        "title":"Technologies", 
+        "technologies_array" : 
+        [
+            {
+                "icon": "HTML5.png"
+            },
+            {
+                "icon": "CSS3.png"
+            },
+            {
+                "icon": "JavaScript.svg"
+            },
+            {
+                "icon": "TypeScript.svg"
+            },
+            {
+                "icon": "React.svg"
+            },
+            {
+                "icon": "Python.png"
+            },
+            {
+                "icon": "C++.png"
+            },
+            {
+                "icon": "C_Sharp.svg"
+            },
+            {
+                "icon": "Ruby.svg"
+            },
+            {
+                "icon": "PostgresSQL.svg"
+            },
+            {
+                "icon": "MongoDB.svg"
+            },
+            {
+                "icon": "Unity.png"
+            }
+        ]
+    },
+    
+    "work_experience": {
+        "title":"Experience",
+        "experience":[
+            {
+                "position_name": "Backend Development", 
+                "company_name": "Acid Tango", 
+                "company_country": "Spain", 
+                "date_span":"Febrero 2024 - Mayo 2024",
+                "description": "During my internship, I developed and optimized an API that integrated the services of two companies, facilitating their communication. Applying agile methodologies, I worked in a team to improve the performance and scalability of the API, which allowed me to apply technical knowledge in a real environment and strengthen my software development skills."
+            }
+        ]
+    },
+    
+    "my_work": {
+        "title":"What can I do",
+        "work_array":
+        [
+            {
+                "image":"Cesinf.png",
+                "webpage_name":"Cesinfull",
+                "description":"I worked for this page"
+            },
+            {
+                "image":"AOS.png",
+                "webpage_name":"AOS",
+                "description":"I worked for this page"
+            }
+        ]
+    }
+}
