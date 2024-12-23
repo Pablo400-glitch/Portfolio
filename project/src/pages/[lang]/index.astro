@@ -1,30 +1,26 @@
 ---
-import TechCard from '../../components/Tech-card.astro';
-import ExperienceCard from '../../components/Experience_card.astro';
-import WorkCard from '../../components/Work_card.astro';
-import '../../style/index.css';
+import TechCard from "../../components/Tech-card.astro";
+import ExperienceCard from "../../components/Experience_card.astro";
+import WorkCard from "../../components/Work_card.astro";
+import "../../style/index.css";
 
-import { useTranslations } from '../../i18n/utils';
-import LanguagePicker from '../../components/Language_picker.astro';
+import { useTranslations } from "../../i18n/utils";
+import LanguagePicker from "../../components/Language_picker.astro";
 
 export async function getStaticPaths() {
-  // Retornamos directamente un array de objetos con los parámetros
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'es' } },
-  ];
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }];   // Retornamos directamente un array de objetos con los parámetros
 }
 
 const { lang } = Astro.params as { lang: "en" | "es" };
 
 const t = useTranslations(lang);
 
-const full_name = t('full_name')
-const career_name = t('career_name')
-const introduction = t('introduction')
-const work_experience = t('work_experience')
-const my_work = t('my_work')
-const technologies = t('technologies')
+const full_name = t("full_name");
+const career_name = t("career_name");
+const introduction = t("introduction");
+const work_experience = t("work_experience");
+const my_work = t("my_work");
+const technologies = t("technologies");
 
 const chunkArray = (array: any[], size: number) => {
   const result = [];
@@ -39,77 +35,84 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
 
 <!doctype html>
 <html lang={lang}>
-	<head>
-		<meta charset="UTF-8" />
-		<title>Portfolio</title>
-		<link rel="icon" type="image.png" href="favicon.png" />
-	</head>
-	
-	<main>
-		<LanguagePicker />
-		<h1 class="mt-10 text-6xl flex justify-center" set:html={full_name}></h1>
-		<h2 class="mt-5 text-5xl flex justify-center" set:html={career_name}></h2>
-		<div class="mx-40">
-			<p class="my-10 mx-96 text-3xl" set:html={introduction}></p>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image.png" href="favicon.png" />
+  </head>
 
-	</main>
+  <main>
+    <LanguagePicker />
+    <h1 class="mt-10 text-6xl flex justify-center" set:html={full_name} />
+    <h2 class="mt-5 text-5xl flex justify-center" set:html={career_name} />
+    <div class="mx-40">
+      <p class="my-10 mx-96 text-3xl" set:html={introduction} />
+    </div>
+  </main>
 
-	<body>
-		<h1 class="text-6xl flex justify-center mb-5" set:html={technologies.title}>{}</h1>
+  <body>
+    <h1 class="text-6xl flex justify-center mb-5" set:html={technologies.title}>
+      {}
+    </h1>
 
-		{
-			techRows.map((row, index) => (
+    {
+      	techRows.map(
+			(row, index) => (
 				<div class="flex justify-center">
-					{
-						row.map((tech: any, idx: any) => (
-							<TechCard 
-								icon={tech.icon}
-							/>
-						))
-					}
-				</div>
-			))
-		}
-
-		<h1 class="mt-32 text-6xl flex justify-center"set:html={work_experience.title}></h1>
-		<div class="mx-96 mb-20">
-			{
-				work_experience.experience.map((experience) => (
-					<ExperienceCard 
-						positionName={experience.position_name} 
-						companyName={experience.company_name} 
-						companyCountry={experience.company_country} 
-						dateSpan={experience.date_span}
-						description={experience.description} 
-					/>
-				))
-			}
-		</div>
-		
-		<div class="mx-56">
-			<img src="/Top_Wave.svg">
-		</div>
-		
-		<div class="mx-56" style="background-color: #dd1e1e">
-			<h1 class="pt-10 text-6xl flex justify-center" set:html={my_work.title}></h1>
-			<div class="mx-auto py-10">
-			  {
-				my_work.work_array.map((work) => (
-					<div class="mx-auto pb-10">
-						<WorkCard
-							image={work.image}
-							webpageName={work.webpage_name}
-							description={work.description}
+				{row.map(
+					(tech: any, idx: any) => (
+						<TechCard 
+							icon={tech.icon} 
 						/>
-					</div>
-				))
-			  }
-			</div>
-		  </div>
-		
-		<div class="mx-56">
-			<img src="/Down_Wave.svg">
-		</div>
-	</body>
+					)
+				)}
+				</div>
+			)
+		)
+    }
+
+    <h1
+      class="mt-32 text-6xl flex justify-center"
+      set:html={work_experience.title}
+    />
+    <div class="mx-96 mb-20">
+      {
+        work_experience.experience.map((experience: any) => (
+          <ExperienceCard
+            positionName={experience.position_name}
+            companyName={experience.company_name}
+            companyCountry={experience.company_country}
+            dateSpan={experience.date_span}
+            description={experience.description}
+          />
+        ))
+      }
+    </div>
+
+    <div class="mx-56">
+      <img src="/Top_Wave.svg" />
+    </div>
+
+    <div class="mx-56" style="background-color: #dd1e1e">
+      <h1 class="pt-10 text-6xl flex justify-center" set:html={my_work.title} />
+      <div class="mx-auto py-10">
+        {
+          my_work.work_array.map((work: any) => (
+            <div class="mx-auto pb-10">
+              <WorkCard
+			  	link={work.link}
+                image={work.image}
+                webpageName={work.webpage_name}
+                description={work.description}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="mx-56">
+      <img src="/Down_Wave.svg" />
+    </div>
+  </body>
 </html>

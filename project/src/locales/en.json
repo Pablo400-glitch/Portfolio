@@ -63,11 +63,13 @@
         "work_array":
         [
             {
+                "link": "https://ix.cesinfull.com/",
                 "image":"Cesinf.png",
-                "webpage_name":"Cesinfull",
+                "webpage_name":"CESINF IX",
                 "description":"I worked for this page"
             },
             {
+                "link": "https://aos24.agile-spain.org/",
                 "image":"AOS.png",
                 "webpage_name":"AOS",
                 "description":"I worked for this page"

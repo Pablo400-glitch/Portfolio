@@ -61,14 +61,16 @@
         "title": "¿Qué puedo hacer?",
         "work_array": [
             {
+                "link": "https://ix.cesinfull.com/",
                 "image": "Cesinf.png",
-                "webpage_name": "Cesinfull",
-                "description": "Trabajé para esta página"
+                "webpage_name": "CESINF IX",
+                "description": "Estuve trabajando en el footer y en el contenido de la página principal de la web"
             },
             {
+                "link": "https://aos24.agile-spain.org/",
                 "image": "AOS.png",
                 "webpage_name": "AOS",
-                "description": "Trabajé para esta página"
+                "description": "Para el evento AOS 2024, asumí la responsabilidad completa de optimizar y destacar el contenido relevante del evento."
             }
         ]
     }

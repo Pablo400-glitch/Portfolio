@@ -3,12 +3,14 @@ import { languages } from '../i18n/ui';
 import { getLangFromUrl, useTranslatedPath } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url) ?? "";
-const traslatedPath = useTranslatedPath(lang as any);
+const traslatedPath = useTranslatedPath(lang as 'es' | 'en' );
 ---
 <ul>
   {Object.entries(languages).map(([lang, label]) => (
     <li>
-      <a href={traslatedPath("/", lang)}>{label}</a>
+      <a href={traslatedPath("/", lang)}>{label}
+        {/* <img src="/languages/${lang}.svg"/> */}
+      </a>
     </li>
   ))}
 </ul>
