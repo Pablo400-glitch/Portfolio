@@ -34,7 +34,7 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html class="my-20" lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
@@ -42,7 +42,9 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
   </head>
 
   <main>
-    <LanguagePicker />
+    <div class="flex justify-center">
+      <LanguagePicker />
+    </div>    
     <h1 class="mt-10 text-6xl flex justify-center" set:html={full_name} />
     <h2 class="mt-5 text-5xl flex justify-center" set:html={career_name} />
     <div class="mx-40">
