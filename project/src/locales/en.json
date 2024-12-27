@@ -1,6 +1,6 @@
 {
     "full_name": "Hey I'm Pablo Pais Ficret",
-    "career_name": "Computer Engineering",
+    "career_name": "Computer Engineer",
     "introduction": "Computer Engineer specialized in web development, backend development and video game development. I'm always eager to learn and apply my knowledge to ensure things work as intended.",
     "technologies": {
         "title":"Technologies", 
@@ -66,13 +66,13 @@
                 "link": "https://ix.cesinfull.com/",
                 "image":"Cesinf.png",
                 "webpage_name":"CESINF IX",
-                "description":"I worked for this page"
+                "description":"I have been working on the footer and the content of the main page of the website."
             },
             {
                 "link": "https://aos24.agile-spain.org/",
                 "image":"AOS.png",
-                "webpage_name":"AOS",
-                "description":"I worked for this page"
+                "webpage_name":"AOS 2024",
+                "description":"For the AOS 2024 event, I took full responsibility for optimizing and highlighting the relevant content of the event."
             }
         ]
     }
