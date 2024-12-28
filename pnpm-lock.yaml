@@ -17,6 +17,9 @@ dependencies:
   i18next:
     specifier: ^24.1.2
     version: 24.2.0(typescript@5.7.2)
+  static:
+    specifier: link:@astro/adapters/static
+    version: link:@astro/adapters/static
   tailwindcss:
     specifier: ^3.4.10
     version: 3.4.17
