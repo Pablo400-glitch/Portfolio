@@ -46,7 +46,7 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof typeof ui[typeof defaultLang]): Translations {
+  return function t(): Translations {
     return ui[lang] || ui[defaultLang];  // Asegúrate de que esto devuelva un objeto con el tipo adecuado
   }
 }

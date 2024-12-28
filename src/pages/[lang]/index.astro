@@ -6,6 +6,7 @@ import "../../style/index.css";
 
 import { useTranslations } from "../../i18n/utils";
 import LanguagePicker from "../../components/Language_picker.astro";
+import { createAnimationScope } from "astro:transitions";
 
 export async function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];   // Retornamos directamente un array de objetos con los parámetros
@@ -15,12 +16,7 @@ const { lang } = Astro.params as { lang: "en" | "es" };
 
 const t = useTranslations(lang);
 
-const full_name = t("full_name");
-const career_name = t("career_name");
-const introduction = t("introduction");
-const work_experience = t("work_experience");
-const my_work = t("my_work");
-const technologies = t("technologies");
+const data = t();
 
 const chunkArray = (array: any[], size: number) => {
   const result = [];
@@ -30,7 +26,7 @@ const chunkArray = (array: any[], size: number) => {
   return result;
 };
 
-const techRows = chunkArray(technologies.technologies.technologies_array, 3); // Divide el array de tecnologías en bloques de 3
+const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide el array de tecnologías en bloques de 3
 ---
 
 <!doctype html>
@@ -44,20 +40,20 @@ const techRows = chunkArray(technologies.technologies.technologies_array, 3); //
     <div class="flex justify-center">
       <LanguagePicker />
     </div>    
-    <h1 class="mt-8 text-6xl flex justify-center font-semibold" set:html={full_name.full_name} />
-    <h2 class="mt-5 text-5xl flex justify-center font-semibold" set:html={career_name.career_name} />
+    <h1 class="mt-8 text-6xl flex justify-center font-semibold" set:html={data.full_name} />
+    <h2 class="mt-5 text-5xl flex justify-center font-semibold" set:html={data.career_name} />
     <div class="mx-40">
-      <p class="my-10 mx-96 text-3xl text-center" set:html={introduction.introduction} />
+      <p class="my-10 mx-96 text-3xl text-center" set:html={data.introduction} />
     </div>
     
     <div class="mt-20">
       <h1
         class="text-6xl flex justify-center font-semibold"
-        set:html={work_experience.work_experience.title}
+        set:html={data.work_experience.title}
       />
       <div class="mx-96 mb-20">
         {
-          work_experience.work_experience.experience.map((experience: any) => (
+          data.work_experience.experience.map((experience: any) => (
             <ExperienceCard
               positionName={experience.position_name}
               companyName={experience.company_name}
@@ -73,19 +69,19 @@ const techRows = chunkArray(technologies.technologies.technologies_array, 3); //
     <div>
       <h1 
         class="text-6xl flex justify-center mb-5 font-semibold" 
-        set:html={technologies.technologies.title}
+        set:html={data.technologies.title}
       />
       {
-          techRows.map(
-        (row, index) => (
+        techRows.map(
+        (row) => (
           <div class="flex justify-center">
-          {row.map(
-            (tech: any, idx: any) => (
-              <TechCard 
-                icon={tech.icon} 
-              />
-            )
-          )}
+            {row.map(
+              (tech: any) => (
+                <TechCard 
+                  icon={tech.icon} 
+                />
+              )
+            )}
           </div>
         )
       )
@@ -99,11 +95,11 @@ const techRows = chunkArray(technologies.technologies.technologies_array, 3); //
     <div class="mx-56" style="background-color: #dd1e1e">
       <h1 
         class="pt-10 text-6xl flex justify-center font-semibold" 
-        set:html={my_work.my_work.title} 
+        set:html={data.my_work.title} 
       />
       <div class="mx-auto py-10">
         {
-          my_work.my_work.work_array.map((work: any) => (
+          data.my_work.work_array.map((work: any) => (
             <div class="mx-auto pb-10">
               <WorkCard
 			  	      link={work.link}
