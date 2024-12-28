@@ -6,7 +6,6 @@ import "../../style/index.css";
 
 import { useTranslations } from "../../i18n/utils";
 import LanguagePicker from "../../components/Language_picker.astro";
-import { createAnimationScope } from "astro:transitions";
 
 export async function getStaticPaths() {
   return [{ params: { lang: "en" } }, { params: { lang: "es" } }];   // Retornamos directamente un array de objetos con los parámetros
