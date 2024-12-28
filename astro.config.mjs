@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   output: "server",
   site:"https://Pablo400-glitch.github.io",
-  base:"Portfolio",
+  base:"",
   integrations: [tailwind()],
   redirects: {
     '/': '/es'

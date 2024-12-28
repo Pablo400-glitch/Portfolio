@@ -30,7 +30,7 @@ const chunkArray = (array: any[], size: number) => {
   return result;
 };
 
-const techRows = chunkArray(technologies.technologies_array, 3); // Divide el array de tecnologías en bloques de 3
+const techRows = chunkArray(technologies.technologies.technologies_array, 3); // Divide el array de tecnologías en bloques de 3
 ---
 
 <!doctype html>
@@ -44,20 +44,20 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
     <div class="flex justify-center">
       <LanguagePicker />
     </div>    
-    <h1 class="mt-8 text-6xl flex justify-center font-semibold" set:html={full_name} />
-    <h2 class="mt-5 text-5xl flex justify-center font-semibold" set:html={career_name} />
+    <h1 class="mt-8 text-6xl flex justify-center font-semibold" set:html={full_name.full_name} />
+    <h2 class="mt-5 text-5xl flex justify-center font-semibold" set:html={career_name.career_name} />
     <div class="mx-40">
-      <p class="my-10 mx-96 text-3xl text-center" set:html={introduction} />
+      <p class="my-10 mx-96 text-3xl text-center" set:html={introduction.introduction} />
     </div>
     
     <div class="mt-20">
       <h1
         class="text-6xl flex justify-center font-semibold"
-        set:html={work_experience.title}
+        set:html={work_experience.work_experience.title}
       />
       <div class="mx-96 mb-20">
         {
-          work_experience.experience.map((experience: any) => (
+          work_experience.work_experience.experience.map((experience: any) => (
             <ExperienceCard
               positionName={experience.position_name}
               companyName={experience.company_name}
@@ -73,7 +73,7 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
     <div>
       <h1 
         class="text-6xl flex justify-center mb-5 font-semibold" 
-        set:html={technologies.title}
+        set:html={technologies.technologies.title}
       />
       {
           techRows.map(
@@ -99,11 +99,11 @@ const techRows = chunkArray(technologies.technologies_array, 3); // Divide el ar
     <div class="mx-56" style="background-color: #dd1e1e">
       <h1 
         class="pt-10 text-6xl flex justify-center font-semibold" 
-        set:html={my_work.title} 
+        set:html={my_work.my_work.title} 
       />
       <div class="mx-auto py-10">
         {
-          my_work.work_array.map((work: any) => (
+          my_work.my_work.work_array.map((work: any) => (
             <div class="mx-auto pb-10">
               <WorkCard
 			  	      link={work.link}

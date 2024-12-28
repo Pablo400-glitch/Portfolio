@@ -1,5 +1,44 @@
 import { ui, defaultLang, showDefaultLang } from './ui';
 
+// Definir tipos para las traducciones
+
+interface Technology {
+  icon: string;
+}
+
+interface WorkExperience {
+  position_name: string;
+  company_name: string;
+  company_country: string;
+  date_span: string;
+  description: string;
+}
+
+interface Work {
+  link: string;
+  image: string;
+  webpage_name: string;
+  description: string;
+}
+
+interface Translations {
+  full_name: string;
+  career_name: string;
+  introduction: string;
+  technologies: {
+    title: string;
+    technologies_array: Technology[];
+  };
+  work_experience: {
+    title: string;
+    experience: WorkExperience[];
+  };
+  my_work: {
+    title: string;
+    work_array: Work[];
+  };
+}
+
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
   if (lang in ui) return lang as keyof typeof ui;
@@ -7,8 +46,8 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function useTranslations(lang: keyof typeof ui) {
-  return function t(key: keyof typeof ui[typeof defaultLang]) {
-    return ui[lang][key] || ui[defaultLang][key];
+  return function t(key: keyof typeof ui[typeof defaultLang]): Translations {
+    return ui[lang] || ui[defaultLang];  // Asegúrate de que esto devuelva un objeto con el tipo adecuado
   }
 }
 
