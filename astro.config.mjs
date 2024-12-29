@@ -6,10 +6,10 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   output: "static",
   site:"https://Pablo400-glitch.github.io",
-  base: process.env.NODE_ENV === 'production' ? '/Portfolio' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/',
   integrations: [tailwind()],
   redirects: {
-    '/Portfolio/': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
+    '/': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
     '/Portfolio/es': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
     '/Portfolio/en': process.env.NODE_ENV === 'production' ? '/Portfolio/en' : '/en',
   }
