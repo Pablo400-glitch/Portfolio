@@ -12,12 +12,12 @@ const { link, image, webpageName, description } = Astro.props;
 const imgBase = import.meta.env.BASE_URL;
 ---
 
-<div class="border-4 border-gray-800 bg-slate-500 p-6 rounded-lg shadow-lg mx-96">
-    <a href={link} >
+<div class="border-4 border-gray-800 bg-slate-500 p-6 rounded-lg shadow-lg mx-4 md:mx-16 lg:mx-32">
+    <a href={link} target="_blank" rel="noopener noreferrer">
         <div class="flex justify-center">
-            <img src={`${imgBase}${image}`}>
+            <img src={`${imgBase}${image}`} class="w-full max-w-xl md:max-w-xl lg:max-w-5xl" alt={webpageName}>
         </div>
-        <p class="flex justify-center text-5xl pt-5"> {webpageName} </p>
-        <p class="flex justify-center text-3xl px-14 py-2 text-center"> {description} </p>
+        <p class="flex justify-center text-2xl md:text-3xl lg:text-4xl pt-5 font-bold text-white"> {webpageName} </p>
+        <p class="flex justify-center text-lg md:text-xl lg:text-2xl px-4 md:px-10 lg:px-14 py-2 text-center text-white"> {description} </p>
     </a>
 </div>
