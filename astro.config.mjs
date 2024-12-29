@@ -9,6 +9,6 @@ export default defineConfig({
   base: '/Portfolio',
   integrations: [tailwind()],
   redirects: {
-    '/': '/es'
+    '/': '/Portfolio/es'
   }
 });
