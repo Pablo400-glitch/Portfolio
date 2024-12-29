@@ -40,18 +40,16 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
     <div class="flex justify-center">
       <LanguagePicker />
     </div>    
-    <h1 class="mt-8 text-6xl flex justify-center font-semibold" set:html={data.full_name} />
-    <h2 class="mt-5 text-5xl flex justify-center font-semibold" set:html={data.career_name} />
-    <div class="mx-40">
-      <p class="my-10 mx-96 text-3xl text-center" set:html={data.introduction} />
-    </div>
+    <h1 class="mt-8 text-4xl md:text-6xl flex justify-center font-semibold text-center" set:html={data.full_name} />
+    <h2 class="mt-5 text-3xl md:text-5xl flex justify-center font-semibold text-center" set:html={data.career_name} />
+    <p class="my-10 mx-4 md:mx-48 lg:mx-96 text-lg md:text-3xl text-center" set:html={data.introduction} />
     
     <div class="mt-20">
       <h1
-        class="text-6xl flex justify-center font-semibold"
+        class="text-4xl md:text-6xl flex justify-center font-semibold"
         set:html={data.work_experience.title}
       />
-      <div class="mx-96 mb-20">
+      <div class="mx-4 md:mx-48 lg:mx-96 mb-20">
         {
           data.work_experience.experience.map((experience: any) => (
             <ExperienceCard
@@ -68,13 +66,13 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
 
     <div>
       <h1 
-        class="text-6xl flex justify-center mb-5 font-semibold" 
+        class="text-4xl md:text-6xl flex justify-center mb-5 font-semibold text-center" 
         set:html={data.technologies.title}
       />
       {
         techRows.map(
         (row) => (
-          <div class="flex justify-center">
+          <div class="flex flex-wrap justify-center gap-4 md:gap-8">
             {row.map(
               (tech: any) => (
                 <TechCard 
@@ -88,21 +86,21 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       }
     </div>
 
-    <div class="mx-56">
-      <img src=`${imgBase}Top_Wave.svg` />
+    <div class="mx-4 md:mx-56">
+      <img src=`${imgBase}Top_Wave.svg` class="w-full" />
     </div>
 
-    <div class="mx-56" style="background-color: #dd1e1e">
+    <div class="mx-4 md:mx-56" style="background-color: #dd1e1e">
       <h1 
-        class="pt-10 text-6xl flex justify-center font-semibold" 
+        class="pt-10 text-4xl md:text-6xl flex justify-center font-semibold text-center" 
         set:html={data.my_work.title} 
       />
-      <div class="mx-auto py-10">
+      <div class="py-10">
         {
           data.my_work.work_array.map((work: any) => (
-            <div class="mx-auto pb-10">
+            <div class="pb-10">
               <WorkCard
-			  	      link={work.link}
+                link={work.link}
                 image={work.image}
                 webpageName={work.webpage_name}
                 description={work.description}
@@ -113,8 +111,8 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       </div>
     </div>
 
-    <div class="mx-56">
-      <img src=`${imgBase}Down_Wave.svg` />
+    <div class="mx-4 md:mx-56">
+      <img src=`${imgBase}Down_Wave.svg` class="w-full" />
     </div>
   </body>
 </html>
