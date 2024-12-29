@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  site:"https://Pablo400-glitch.github.io",
+  site:"https://Pablo400-glitch.github.io/Portfolio",
   base: '/Portfolio',
   integrations: [tailwind()],
   redirects: {
