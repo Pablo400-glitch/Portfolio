@@ -1,5 +1,6 @@
 ---
 import '../style/tech-card.css';
+const imgBase = import.meta.env.BASE_URL;
 
 interface Props {
     icon: string;
@@ -10,6 +11,6 @@ const { icon } = Astro.props;
 
 <div class="tech-card">
     <div class="m-2">
-        <img src={`/${icon}`}>
+        <img src={`${imgBase}${icon}`}>
     </div>
 </div>

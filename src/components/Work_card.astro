@@ -9,12 +9,13 @@ interface Props {
 }
 
 const { link, image, webpageName, description } = Astro.props;
+const imgBase = import.meta.env.BASE_URL;
 ---
 
 <div class="border-4 border-gray-800 bg-slate-500 p-6 rounded-lg shadow-lg mx-96">
     <a href={link} >
         <div class="flex justify-center">
-            <img src={`/${image}`}>
+            <img src={`${imgBase}${image}`}>
         </div>
         <p class="flex justify-center text-5xl pt-5"> {webpageName} </p>
         <p class="flex justify-center text-3xl px-14 py-2 text-center"> {description} </p>
