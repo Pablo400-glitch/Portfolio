@@ -42,9 +42,8 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
     </div>    
     <h1 class="mt-8 text-4xl md:text-6xl flex justify-center font-semibold text-center" set:html={data.full_name} />
     <h2 class="mt-5 text-3xl md:text-5xl flex justify-center font-semibold text-center" set:html={data.career_name} />
-    <p class="my-10 mx-4 md:mx-48 lg:mx-96 text-lg md:text-3xl text-center" set:html={data.introduction} />
-    
-    <div class="mt-20">
+    <p class="py-5 md:my-10 mx-2 md:mx-48 lg:mx-96 text-lg md:text-3xl text-center" set:html={data.introduction} /> 
+    <div class="mt-8 md:mt-10">
       <h1
         class="text-4xl md:text-6xl flex justify-center font-semibold"
         set:html={data.work_experience.title}
@@ -86,11 +85,11 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       }
     </div>
 
-    <div class="mx-4 md:mx-56">
+    <div class="mx-8 md:mx-20">
       <img src=`${imgBase}Top_Wave.svg` class="w-full" />
     </div>
 
-    <div class="mx-4 md:mx-56" style="background-color: #dd1e1e">
+    <div class="mx-8 md:mx-20" style="background-color: #dd1e1e">
       <h1 
         class="pt-10 text-4xl md:text-6xl flex justify-center font-semibold text-center" 
         set:html={data.my_work.title} 
@@ -111,7 +110,7 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       </div>
     </div>
 
-    <div class="mx-4 md:mx-56">
+    <div class="mx-8 md:mx-20">
       <img src=`${imgBase}Down_Wave.svg` class="w-full" />
     </div>
   </body>
