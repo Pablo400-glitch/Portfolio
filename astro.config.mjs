@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [tailwind()],
   redirects: {
     '/': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
-    '/Portfolio/es': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
-    '/Portfolio/en': process.env.NODE_ENV === 'production' ? '/Portfolio/en' : '/en',
+    '/es': process.env.NODE_ENV === 'production' ? '/Portfolio/es' : '/es',
+    '/en': process.env.NODE_ENV === 'production' ? '/Portfolio/en' : '/en',
   }
 });
