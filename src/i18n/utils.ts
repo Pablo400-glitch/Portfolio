@@ -57,7 +57,7 @@ export function useTranslatedPath(lang: keyof typeof ui) {
     const basePath = import.meta.env.BASE_URL === '/' ? '' : '/Portfolio';
     
     // Verifica si la ruta no está usando el idioma por defecto
-    const languagePath = !showDefaultLang && l === defaultLang ? path : `/${l}${path}`;
+    const languagePath = !showDefaultLang && l === defaultLang ? path : `/${l}`;
     
     // Devuelve la ruta con el prefijo adecuado
     return `${basePath}${languagePath}`;
