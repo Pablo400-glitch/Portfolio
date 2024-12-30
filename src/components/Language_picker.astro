@@ -9,7 +9,7 @@ const imgBase = import.meta.env.BASE_URL;
 
 {Object.entries(languages).map(([lang, label]) => (
     <div class="mx-2">
-      <a href={traslatedPath(lang)}>
+      <a href={traslatedPath("")}>
         <img 
           src={`${imgBase}language/${lang.toLowerCase()}.svg`} 
           class="w-20 h-20 align-middle"
