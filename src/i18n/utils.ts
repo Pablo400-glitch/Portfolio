@@ -52,7 +52,14 @@ export function useTranslations(lang: keyof typeof ui) {
 }
 
 export function useTranslatedPath(lang: keyof typeof ui) {
-    return function translatePath(path: string, l: string = lang) {
-      return !showDefaultLang && l === defaultLang ? path : `/${path}${l}`
-    }
-  }
+  return function translatePath(path: string, l: string = lang) {
+    // Obtener el prefijo de base desde la configuración de Astro
+    const basePath = import.meta.env.BASE_URL === '/' ? '' : '/Portfolio';
+    
+    // Verifica si la ruta no está usando el idioma por defecto
+    const languagePath = !showDefaultLang && l === defaultLang ? path : `/${l}${path}`;
+    
+    // Devuelve la ruta con el prefijo adecuado
+    return `${basePath}${languagePath}`;
+  };
+}
