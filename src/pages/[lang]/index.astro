@@ -30,7 +30,12 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
 ---
 
 <!doctype html>
-<html class="mt-10 mb-36" lang={lang}>
+<html class="mt-10 mb-36 overflow-auto" style="scrollbar-width: none; -ms-overflow-style: none;" lang={lang}>
+    <style>
+    div::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Edge */
+    }
+  </style>
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
@@ -85,11 +90,9 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       }
     </div>
 
-    <div class="mx-8 md:mx-20">
-      <img src=`${imgBase}Top_Wave.svg` class="w-full" />
-    </div>
+    <img src=`${imgBase}Top_Wave.svg` class="w-full" />
 
-    <div class="mx-8 md:mx-20" style="background-color: #dd1e1e">
+    <div style="background-color: #dd1e1e">
       <h1 
         class="pt-10 text-4xl md:text-6xl flex justify-center font-semibold text-center" 
         set:html={data.my_work.title} 
@@ -110,8 +113,6 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       </div>
     </div>
 
-    <div class="mx-8 md:mx-20">
-      <img src=`${imgBase}Down_Wave.svg` class="w-full" />
-    </div>
+    <img src=`${imgBase}Down_Wave.svg` class="w-full" />
   </body>
 </html>
