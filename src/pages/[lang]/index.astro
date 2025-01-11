@@ -96,11 +96,12 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
       <h1 
         class="pt-10 text-4xl md:text-6xl flex justify-center font-semibold text-center" 
         set:html={data.my_work.title} 
-      />
-      <div class="py-10">
+      ></h1>
+    
+      <div class="py-10 px-24 grid grid-cols-2">
         {
           data.my_work.work_array.map((work: any) => (
-            <div class="pb-10">
+            <div class="">
               <WorkCard
                 link={work.link}
                 image={work.image}
