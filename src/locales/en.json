@@ -75,5 +75,24 @@
                 "description":"For the AOS 2024 event, I took full responsibility for optimizing and highlighting the relevant content of the event."
             }
         ]
+    },
+
+    "videogames_master": {
+        "title": "Reflections on the Master's Degree in Videogames: Learning and Experiences",
+        "description": "In this section, I share reflections and learnings obtained throughout my Master's Degree in Videogames. Each entry is intended to reflect the knowledge acquired in different subjects of the master's degree. My goal is to show how these experiences and knowledge directly influence my professional approach within the videogame industry.",
+        "entries": [
+            {
+                "title": "ShotGrid",
+                "subtitle": "Centralised Organisation and Collaboration",
+                "subject": "Videogames Production",
+                "description": "ShotGrid is a powerful tool designed to manage creative projects, especially in collaborative environments such as game studios. Among its main advantages is the ability to manage tasks, allowing specific responsibilities to be assigned to artists, programmers and designers, while tracking the time and status of each task. In addition, it facilitates the visualisation of project progress through Kanban-type boards and Gantt views, which helps the team to identify bottlenecks and prioritise tasks. Another outstanding feature is the integration of assets, allowing artists to directly upload models, textures or animations and receive real-time feedback within ShotGrid. For example, in the development of a video game with multiple environments, ShotGrid organises deliveries by levels (Level Design), specifying deadlines for 3D assets, textures or lighting."
+            },
+            {
+                "title": "Feedback Loops",
+                "subtitle": "The Driver of Player Motivation",
+                "subject": "Videogames Design",
+                "description": "In my Video Game Design course, I learned about feedback loops, which are critical to maintaining player motivation and interest. Positive loops reinforce the player's actions by providing rewards, such as experience or upgrades, which increases the sense of progress and motivates further play. On the other hand, negative loops penalise wrong decisions, such as losing life points or resources, which creates a constant challenge and forces the player to improve their performance. The proper design of these loops is crucial to balancing gameplay, ensuring that the player feels both rewarded and challenged, which increases immersion and overall game satisfaction. A balance between both types of loops can maintain player tension, interest and motivation throughout the gaming experience."
+            }           
+        ]
     }
 }

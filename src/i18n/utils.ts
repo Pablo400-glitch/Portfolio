@@ -21,6 +21,13 @@ interface Work {
   description: string;
 }
 
+interface VideogamesMaster {
+  title: string;
+  subtitle: string;
+  subject: string;
+  description: string;
+}
+
 interface Translations {
   full_name: string;
   career_name: string;
@@ -36,6 +43,11 @@ interface Translations {
   my_work: {
     title: string;
     work_array: Work[];
+  };
+  videogames_master: {
+    title: string;
+    description: string;
+    entries: VideogamesMaster[];
   };
 }
 
