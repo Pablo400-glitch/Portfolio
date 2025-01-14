@@ -1,26 +1,20 @@
 ---
 const { title, subtitle, subject, content } = Astro.props;
 ---
-
-<div class="mx-4 md:mx-8 lg:mx-8 flex justify-center">
-    <div 
-        style="background-color: #000000;" 
-        class="border-8 border-white py-5 px-2 md:px-10 lg:px-20 transform md:rotate-[2.5deg] w-full min-h-[500px]"
-    >
-        <div class="mt-10 w-full">
-            <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-semibold">
-                {title}
-            </p>
-            <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-semibold mt-4">
-                {subtitle}
-            </p>
-            <p class="flex justify-center my-8 text-2xl md:text-3xl lg:text-4xl text-center font-medium"> 
-                {subject} 
-            </p>
-            <p class="flex justify-center text-xl md:text-2xl lg:text-3xl  text-center overflow-auto"> 
-                {content}
-            </p>
-        </div>
+<div class="border-2 border-white bg-black rounded-lg mx-2 transform lg:rotate-2">
+    <div class="py-12 px-20"> 
+        <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+            {title}
+        </p>
+        <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-8">
+            {subtitle}
+        </p>
+        <p class="flex justify-center my-8 text-2xl md:text-3xl lg:text-4xl text-center font-bold"> 
+            {subject} 
+        </p>
+        <p class="flex justify-center text-xl md:text-2xl lg:text-3xl text-center"> 
+            {content}
+        </p>
     </div>
 </div>
 

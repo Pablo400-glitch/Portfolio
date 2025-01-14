@@ -125,15 +125,17 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
         {data.videogames_master.description}
       </p>
       
-      <div class="py-10 px-24 grid grid-cols-1 md:grid-cols-2">
+      <div class="px-12 py-12 grid grid-cols-1 md:grid-cols-2">
         {        
           data.videogames_master.entries.map((entry: any) => (
-            <MasterCard
-              title={entry.title}
-              subtitle={entry.subtitle}
-              subject={entry.subtitle}
-              content={entry.description}
-            />
+            <div class="py-2 lg:px-10">
+              <MasterCard
+                title={entry.title}
+                subtitle={entry.subtitle}
+                subject={entry.subject}
+                content={entry.description}
+              />
+            </div>
           ))
         }
       </div>
