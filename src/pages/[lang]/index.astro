@@ -2,6 +2,7 @@
 import TechCard from "../../components/Tech-card.astro";
 import ExperienceCard from "../../components/Experience_card.astro";
 import WorkCard from "../../components/Work_card.astro";
+import MasterCard from "../../components/master_card.astro";
 import "../../style/index.css";
 
 import { useTranslations } from "../../i18n/utils";
@@ -98,7 +99,7 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
         set:html={data.my_work.title} 
       ></h1>
     
-      <div class="py-10 px-24 grid grid-cols-2">
+      <div class="py-10 px-24 grid grid-cols-1 md:grid-cols-2">
         {
           data.my_work.work_array.map((work: any) => (
             <div class="">
@@ -115,5 +116,30 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
     </div>
 
     <img src=`${imgBase}Down_Wave.svg` class="w-full" />
+
+    <div class="experience-card mx-4 md:mx-24 lg:mx-36 mb-20 mt-12">
+      <h1 class="pt-5 text-4xl md:text-6xl flex justify-center font-semibold text-center"> 
+        {data.videogames_master.title}
+      </h1>
+      <p class="flex justify-center text-xl md:text-2xl lg:text-3xl px-4 pb-2 pt-10 text-center mx-20"> 
+        {data.videogames_master.description}
+      </p>
+      
+      <div class="px-12 py-12 grid grid-cols-1 md:grid-cols-2">
+        {        
+          data.videogames_master.entries.map((entry: any) => (
+            <div class="py-2 lg:px-10">
+              <MasterCard
+                title={entry.title}
+                subtitle={entry.subtitle}
+                subject={entry.subject}
+                content={entry.description}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
   </body>
+
 </html>

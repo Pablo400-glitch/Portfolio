@@ -73,5 +73,24 @@
                 "description": "Para el evento AOS 2024, asumí la responsabilidad completa de optimizar y destacar el contenido relevante del evento"
             }
         ]
+    },
+
+    "videogames_master": {
+        "title": "Reflexiones del Máster de Videojuegos: Aprendizajes y Experiencias ",
+        "description": "En esta sección, comparto reflexiones y aprendizajes obtenidos a lo largo de mi Máster en Videojuegos. Cada entrada pretende reflejar el conocimiento adquirido en diversas asignaturas del master. Mi objetivo es mostrar cómo estas experiencias y conocimientos influyen directamente en mi enfoque profesional dentro de la industria del videojuego.",
+        "entries": [
+            {
+                "title": "ShotGrid",
+                "subtitle": "Organización y Colaboración Centralizada",
+                "subject": "Producción de Videojuegos",
+                "description": "ShotGrid es una herramienta poderosa diseñada para gestionar proyectos creativos, especialmente en entornos colaborativos como los estudios de videojuegos. Entre sus principales ventajas se encuentra la capacidad de gestionar tareas, lo que permite asignar responsabilidades específicas a artistas, programadores y diseñadores, al mismo tiempo que realiza un seguimiento de los tiempos y estados de cada tarea. Además, facilita la visualización del progreso del proyecto mediante tableros tipo Kanban y vistas Gantt, lo que ayuda al equipo a identificar cuellos de botella y priorizar tareas. Otra característica destacada es la integración de assets, permitiendo a los artistas cargar directamente modelos, texturas o animaciones y recibir retroalimentación en tiempo real dentro de ShotGrid. Por ejemplo, en el desarrollo de un videojuego con múltiples entornos, ShotGrid organiza las entregas por niveles (Level Design), especificando plazos para los assets 3D, texturas o iluminación."
+            },
+            {
+                "title": "Feedback Loops",
+                "subtitle": "El Motor de la Motivación del Jugador",
+                "subject": "Diseño de Videojuegos",
+                "description": "En la asignatura de Diseño de Videojuegos, aprendí sobre los feedback loops (bucles de retroalimentación), que son fundamentales para mantener la motivación y el interés del jugador. Los loops positivos refuerzan las acciones del jugador al proporcionar recompensas, como experiencia o mejoras, lo que aumenta la sensación de progreso y motiva a seguir jugando. Por otro lado, los loops negativos penalizan las decisiones equivocadas, como perder puntos de vida o recursos, lo que genera un desafío constante y obliga al jugador a mejorar su desempeño. El diseño adecuado de estos loops es crucial para equilibrar la jugabilidad, asegurando que el jugador se sienta tanto recompensado como desafiado, lo que aumenta la inmersión y la satisfacción general del juego. Un equilibrio entre ambos tipos de loops puede mantener la tensión, el interés y la motivación del jugador durante toda la experiencia de juego."
+            }           
+        ]
     }
 }
