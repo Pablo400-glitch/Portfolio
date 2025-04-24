@@ -125,7 +125,7 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
         {data.videogames_master.description}
       </p>
       
-      <div class="px-12 py-12 grid grid-cols-1 md:grid-cols-2">
+      <div class="px-12 py-12 grid grid-cols-1">
         {        
           data.videogames_master.entries.map((entry: any) => (
             <div class="py-2 lg:px-10">
@@ -134,6 +134,7 @@ const techRows = chunkArray(data.technologies.technologies_array, 3); // Divide 
                 subtitle={entry.subtitle}
                 subject={entry.subject}
                 content={entry.description}
+                video_link={entry.video_link}
               />
             </div>
           ))

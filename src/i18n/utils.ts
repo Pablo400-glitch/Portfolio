@@ -26,6 +26,7 @@ interface VideogamesMaster {
   subtitle: string;
   subject: string;
   description: string;
+  video_link?: string;
 }
 
 interface Translations {

@@ -78,7 +78,7 @@
     },
 
     "videogames_master": {
-        "title": "Reflections on the Master's Degree in Videogames: Learning and Experiences",
+        "title": "Reflections on the Master's Degree in Videogames: Learning, Experiences and Projects",
         "description": "In this section, I share reflections and learnings obtained throughout my Master's Degree in Videogames. Each entry is intended to reflect the knowledge acquired in different subjects of the master's degree. My goal is to show how these experiences and knowledge directly influence my professional approach within the videogame industry.",
         "entries": [
             {
@@ -92,7 +92,14 @@
                 "subtitle": "The Driver of Player Motivation",
                 "subject": "Videogames Design",
                 "description": "In my Video Game Design course, I learned about feedback loops, which are critical to maintaining player motivation and interest. Positive loops reinforce the player's actions by providing rewards, such as experience or upgrades, which increases the sense of progress and motivates further play. On the other hand, negative loops penalise wrong decisions, such as losing life points or resources, which creates a constant challenge and forces the player to improve their performance. The proper design of these loops is crucial to balancing gameplay, ensuring that the player feels both rewarded and challenged, which increases immersion and overall game satisfaction. A balance between both types of loops can maintain player tension, interest and motivation throughout the gaming experience."
-            }           
+            },
+            {
+                "title": "2D Prototype",
+                "subtitle": "Metroid Like 2D Prototype",
+                "subject": "Fundamentals of Video Game Development",
+                "description": "The game is a 2D platformer inspired by classic Metroid titles. Players explore a vast map, battling enemies and overcoming obstacles to progress. The protagonist wears armor reminiscent of Samus Aran and can shoot projectiles to defeat foes.",
+                "video_link": "https://drive.google.com/file/d/14TAZkojLA8gPMUMKS-J1uM3KMdzKklHf/view?usp=drive_link"
+            }
         ]
     }
 }

@@ -1,20 +1,34 @@
 ---
-const { title, subtitle, subject, content } = Astro.props;
+const { title, subtitle, subject, content, video_link } = Astro.props;
+const embedUrl = video_link?.replace('/view', '/preview');
 ---
-<div class="border-2 border-white bg-black rounded-lg mx-2 transform lg:rotate-2">
-    <div class="py-12 px-20"> 
-        <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold">
-            {title}
-        </p>
-        <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-8">
-            {subtitle}
-        </p>
-        <p class="flex justify-center my-8 text-2xl md:text-3xl lg:text-4xl text-center font-bold"> 
-            {subject} 
-        </p>
-        <p class="flex justify-center text-xl md:text-2xl lg:text-3xl text-center"> 
-            {content}
-        </p>
-    </div>
-</div>
 
+<div class="border-2 border-white bg-black rounded-lg mx-2 transform">
+  <div class="py-12 px-20"> 
+    <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+      {title}
+    </p>
+    <p class="flex justify-center text-3xl md:text-4xl lg:text-5xl text-center font-bold mt-8">
+      {subtitle}
+    </p>
+    <p class="flex justify-center my-8 text-2xl md:text-3xl lg:text-4xl text-center font-bold"> 
+      {subject} 
+    </p>
+    <p class="flex justify-center text-xl md:text-2xl lg:text-3xl text-center"> 
+      {content}
+    </p>
+
+    {embedUrl && (
+      <div class="mt-8 flex justify-center">
+        <iframe
+          src={embedUrl}
+          width="100%"
+          height="315"
+          allow="autoplay"
+          allowfullscreen
+          class="rounded-xl shadow-md max-w-4xl"
+        ></iframe>
+      </div>
+    )}
+  </div>
+</div>
