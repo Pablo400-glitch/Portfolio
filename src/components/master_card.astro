@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, subject, content, video_link } = Astro.props;
+const { title, subtitle, subject, content, video_link, github_link } = Astro.props;
 const embedUrl = video_link?.replace('/view', '/preview');
 ---
 
@@ -28,6 +28,19 @@ const embedUrl = video_link?.replace('/view', '/preview');
           allowfullscreen
           class="rounded-xl shadow-md max-w-4xl"
         ></iframe>
+      </div>
+    )}
+
+    {github_link && (
+      <div class="mt-8 flex justify-center">
+        <a
+          href={github_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-400 underline text-xl md:text-2xl lg:text-3xl"
+        >
+          GitHub
+        </a>
       </div>
     )}
   </div>

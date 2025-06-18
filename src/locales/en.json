@@ -99,7 +99,14 @@
                 "subject": "Fundamentals of Video Game Development",
                 "description": "The game is a 2D platformer inspired by classic Metroid titles. Players explore a vast map, battling enemies and overcoming obstacles to progress. The protagonist wears armor reminiscent of Samus Aran and can shoot projectiles to defeat foes.",
                 "video_link": "https://drive.google.com/file/d/14TAZkojLA8gPMUMKS-J1uM3KMdzKklHf/view?usp=drive_link"
-            }
+            },
+            {
+                "title": "GOAP Project",
+                "subtitle": "Alplying GOAP in a Lethal Company Inspired Game",
+                "subject": "Artificial Intelligence in Videogames",
+                "description": "For this GOAP implementation, I was inspired by the video game Lethal Company, where a group of workers must collect various items on an unknown planet and bring them back to their ship. In my version, there are several items scattered across the terrain that a worker needs to gather, while a number of monsters attempt to interfere with the collection process.",
+                "github_link": "https://github.com/Pablo400-glitch/Proyecto_GOAP"
+            }   
         ]
     }
 }
