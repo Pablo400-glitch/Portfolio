@@ -103,8 +103,16 @@
                 "subtitle": "Aplicando GOAP en Lethal Company",
                 "subject": "Inteligencia Artificial en Videojuegos",
                 "description": "Para esta implementación de GOAP me inspiré en el videojuego Lethal Company, donde un grupo de trabajadores debe recolectar diversos objetos en un planeta desconocido y llevarlos de regreso a su nave. En mi caso, el escenario incluye varios objetos dispersos por el terreno, los cuales deben ser recogidos por un trabajador mientras una serie de monstruos intentan obstaculizar el proceso.",
-                "github_link": "https://github.com/Pablo400-glitch/Proyecto_GOAP"
-            }           
+                "github_link": "https://github.com/Pablo400-glitch/Proyecto_GOAP",
+                "link_type_name": "Github"
+            },
+            {
+                "title": "TFM",
+                "subtitle": "Velocidad y Fluidez: Creación de un Prototipo de carreras arcade futuristas",
+                "description": "En este TFM se creo un prototipo de un juego arcade de carreras inspirado en juegos como Sonic Riders y Jet Set Radio, cuyo objetivo es ofrece carreras rápidas y fluidas junto a unos controles precisos. En el link de drive puedes encontrar el proyecto completo, un ejecutable del mismo y la memoria completa del proyecto.",
+                "github_link": "https://drive.google.com/drive/folders/1BZWkS5zpBq9xkxxpwIFvCijjsa5Scdj0?usp=sharing",
+                "link_type_name": "Drive"
+            }             
         ]
     }
 }

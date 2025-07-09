@@ -105,8 +105,16 @@
                 "subtitle": "Alplying GOAP in a Lethal Company Inspired Game",
                 "subject": "Artificial Intelligence in Videogames",
                 "description": "For this GOAP implementation, I was inspired by the video game Lethal Company, where a group of workers must collect various items on an unknown planet and bring them back to their ship. In my version, there are several items scattered across the terrain that a worker needs to gather, while a number of monsters attempt to interfere with the collection process.",
-                "github_link": "https://github.com/Pablo400-glitch/Proyecto_GOAP"
-            }   
+                "github_link": "https://github.com/Pablo400-glitch/Proyecto_GOAP",
+                "link_type_name": "Github"
+            },
+            {
+                "title": "TFM Project",
+                "subtitle": "Speed and Fluidity: Creating a Futuristic Arcade Racing Prototype",
+                "description": "In this Master's Thesis, a prototype of an arcade racing game was created, inspired by games such as Sonic Riders and Jet Set Radio, whose objective is to offer fast and fluid racing with precise controls. In the Drive link, you can find the complete project, an executable file, and the complete project report.",
+                "github_link": "https://drive.google.com/drive/folders/1BZWkS5zpBq9xkxxpwIFvCijjsa5Scdj0?usp=sharing",
+                "link_type_name": "Drive"
+            }  
         ]
     }
 }

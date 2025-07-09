@@ -1,5 +1,5 @@
 ---
-const { title, subtitle, subject, content, video_link, github_link } = Astro.props;
+const { title, subtitle, subject, content, video_link, github_link, link_type_name } = Astro.props;
 const embedUrl = video_link?.replace('/view', '/preview');
 ---
 
@@ -39,7 +39,7 @@ const embedUrl = video_link?.replace('/view', '/preview');
           rel="noopener noreferrer"
           class="text-blue-400 underline text-xl md:text-2xl lg:text-3xl"
         >
-          GitHub
+          {link_type_name}
         </a>
       </div>
     )}

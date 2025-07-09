@@ -28,6 +28,7 @@ interface VideogamesMaster {
   description: string;
   video_link?: string;
   github_link?: string;
+  link_type_name?: string;
 }
 
 interface Translations {
