@@ -24,8 +24,8 @@ interface Work {
 interface VideogamesMaster {
   title: string;
   subtitle: string;
-  subject: string;
   description: string;
+  subject?: string;
   video_link?: string;
   github_link?: string;
   link_type_name?: string;
