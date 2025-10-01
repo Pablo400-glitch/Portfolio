@@ -41,6 +41,9 @@
             },
             {
                 "icon": "Unity.png"
+            },
+            {
+                "icon": "Unreal.png"
             }
         ]
     },
@@ -54,6 +57,13 @@
                 "company_country": "Spain", 
                 "date_span":"Febrero 2024 - Mayo 2024",
                 "description": "During my internship, I developed and optimized an API that integrated the services of two companies, facilitating their communication. Applying agile methodologies, I worked in a team to improve the performance and scalability of the API, which allowed me to apply technical knowledge in a real environment and strengthen my software development skills."
+            },
+            {
+                "position_name": "Web Developer", 
+                "company_name": "Hybridap", 
+                "company_country": "Spain", 
+                "date_span": "September 2024 - Present",
+                "description": "Currently, I work as a web developer at Hybridap, where I handle the development and maintenance of websites for various clients. I use technologies such as .NET, HTML, CSS, and JavaScript to create attractive and functional web experiences."
             }
         ]
     },
